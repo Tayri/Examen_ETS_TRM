@@ -25,7 +25,7 @@ public class Examen_ets_tayri {
          if (decidir == JOptionPane.YES_OPTION){
          opcion = Integer.parseInt(JOptionPane.showInputDialog("Ingrese una opcion para resolver: \n 1: areaCuadrado \n 2: areaRectangulo \n 3: areaCirculo \n 4: areaTriangulo"));
         if (opcion == 1){
-        	areaCuadrado();
+        	area_cuadrado();
         }
         if (opcion == 2){
         	areaRectangulo();
@@ -46,7 +46,7 @@ public class Examen_ets_tayri {
     }
         
     }
-        public static void areaCuadrado() {
+        public static void area_cuadrado() {
 		double lado1, lado2, result;
 		lado1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa un numero: " ));
         lado2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa otro numero: "));
