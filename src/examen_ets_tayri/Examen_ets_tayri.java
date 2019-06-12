@@ -46,20 +46,20 @@ public class Examen_ets_tayri {
     }
         
     }
-    public static void areaCuadrado() {
-		double lado1, lado2, resultado;
+        public static void areaCuadrado() {
+		double lado1, lado2, result;
 		lado1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa un numero: " ));
         lado2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa otro numero: "));
-        resultado = lado1 * lado2;
-        JOptionPane.showMessageDialog(null, resultado);
+        result = lado1 * lado2;
+        JOptionPane.showMessageDialog(null, result);
 	}
 	public static void areaRectangulo() {
         //b=base
         //h=altura
-		double b, altura, resultado;
+		double b, h, resultado;
 		 b = Integer.parseInt(JOptionPane.showInputDialog(null, "Indica la base del rectángulo: " ));
-         altura = Integer.parseInt(JOptionPane.showInputDialog(null, "Indica la altura del rectángulo "));
-         resultado = b * altura;
+         h = Integer.parseInt(JOptionPane.showInputDialog(null, "Indica la altura del rectángulo "));
+         resultado = b * h;
          JOptionPane.showMessageDialog(null, resultado);
 	}
 	public static void areaCirculo() {
@@ -72,11 +72,11 @@ public class Examen_ets_tayri {
 	public static void areaTriangulo() {
         //b=base
         //h=altura
-		double b, h, resultado;
+		double b, h, result;
 		b = Integer.parseInt(JOptionPane.showInputDialog(null, "Indica la base del triangulo: " ));
         h = Integer.parseInt(JOptionPane.showInputDialog(null, "Indica la altura del triangulo: "));
-        resultado = (b * h) / 2;
-        JOptionPane.showMessageDialog(null, resultado);
+        result = (b * h) / 2;
+        JOptionPane.showMessageDialog(null, result);
 	}
     
     
