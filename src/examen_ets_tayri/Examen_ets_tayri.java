@@ -5,6 +5,8 @@
  */
 package examen_ets_tayri;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author AlumGS
@@ -16,30 +18,66 @@ public class Examen_ets_tayri {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-          // Todo en una sola clase
-        /* Resultados calculadoos
-        Cálculo del Área Cuadrado
-        Cálculo del¨Área rectangulo
-        Cálculo del áreacirculo
-        Cálculo del Área del Triangulo
-        */
-        int alturaCuadrado=0;
-        double baseCuadrado=0;
-        double areaCuadrado=Math.pow(alturaCuadrado,2);
-        double baseRectangulo=0;
-        int alturaRectangulo=0;
-        double areaRectangulo=alturaRectangulo*baseRectangulo;
-        int radioCirculo=0;
-        double Pi=3.14;
-        double areaCirculo=(Pi * Math.pow(radioCirculo,2));
-        int baseTriangulo=0;
-        int alturaTriangulo=0;
-        int areaTriangulo=((baseTriangulo*alturaTriangulo)/2);
-        System.out.println(areaCuadrado);
-        System.out.println(areaRectangulo);
-        System.out.println(areaCirculo);
-        System.out.println(areaTriangulo);  
+        
+        
+        int opcion;
+        int decidir = JOptionPane.showConfirmDialog(null, "Â¿Quieres calcular algo?");
+         if (decidir == JOptionPane.YES_OPTION){
+         opcion = Integer.parseInt(JOptionPane.showInputDialog("Ingrese una opcion para resolver: \n 1: areaCuadrado \n 2: areaRectangulo \n 3: areaCirculo \n 4: areaTriangulo"));
+        if (opcion == 1){
+        	areaCuadrado();
+        }
+        if (opcion == 2){
+        	areaRectangulo();
+        }
+        if (opcion == 3){
+        	areaCirculo();
+        }
+        if (opcion == 4){
+        	areaTriangulo();
+        }
+     }
+     if (decidir == JOptionPane.NO_OPTION){
+         JOptionPane.showMessageDialog(null, "Pues na sigue con tu vida guapi");
+     }
+     if (decidir == JOptionPane.CANCEL_OPTION){
+         System.exit(0);
+     
     }
+        
+    }
+    public static void areaCuadrado() {
+		double lado1, lado2, resultado;
+		lado1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa un numero: " ));
+        lado2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa otro numero: "));
+        resultado = lado1 * lado2;
+        JOptionPane.showMessageDialog(null, resultado);
+	}
+	public static void areaRectangulo() {
+        //b=base
+        //h=altura
+		double b, altura, resultado;
+		 b = Integer.parseInt(JOptionPane.showInputDialog(null, "Indica la base del rectángulo: " ));
+         altura = Integer.parseInt(JOptionPane.showInputDialog(null, "Indica la altura del rectángulo "));
+         resultado = b * altura;
+         JOptionPane.showMessageDialog(null, resultado);
+	}
+	public static void areaCirculo() {
+		double pi, radio, resultado;
+		 pi = 3.14;
+         radio = Integer.parseInt(JOptionPane.showInputDialog(null, "Indica el radio: "));
+         resultado = pi * Math.pow(radio, 2);
+         JOptionPane.showMessageDialog(null, resultado);
+	}
+	public static void areaTriangulo() {
+        //b=base
+        //h=altura
+		double b, h, resultado;
+		b = Integer.parseInt(JOptionPane.showInputDialog(null, "Indica la base del triangulo: " ));
+        h = Integer.parseInt(JOptionPane.showInputDialog(null, "Indica la altura del triangulo: "));
+        resultado = (b * h) / 2;
+        JOptionPane.showMessageDialog(null, resultado);
+	}
     
     
 }
