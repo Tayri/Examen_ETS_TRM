@@ -10,6 +10,11 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author AlumGS
+ * @since 2019/06/12 a las 17:00h creación del programa
+ * @since 2019/06/12 a las 17:40h creación del 1er método
+ * @since 2019/06/12 a las 17:58h creación del 2º método
+ * @since 2019/06/12 a las 18:10h creación del 3er método
+ * @since 2019/06/12 a las 18:22h creación del 4º método
  */
 public class Examen_ets_tayri {
 
