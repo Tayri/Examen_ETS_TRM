@@ -44,6 +44,7 @@ public class Examen_ets_tayri {
          System.exit(0);
      
     }
+     
         
     }
         public static void area_cuadrado() {
